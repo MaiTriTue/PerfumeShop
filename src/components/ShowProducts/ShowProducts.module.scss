@@ -1,0 +1,138 @@
+.top-products_body {
+    width: 100%;
+    .wrapper-seller_products {
+        width: 100%;
+        // width: var(--width-slide-BS);
+
+        overflow: hidden;
+
+        // background-color: aqua;
+        .products-slide {
+            // width: calc(var(--width-slide-BS) * 2);
+            width: var(--width-slide-TP);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s ease-in-out;
+        }
+
+        .products-slide_item {
+            width: calc(var(--width-slide-TP) / 6);
+            padding: 0 5px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .products-slide_item-body {
+            width: 100%;
+            padding-bottom: 10px;
+            background-color: #fff;
+        }
+
+        .products-slide_item-discount {
+            width: 30%;
+            position: absolute;
+            top: -2px;
+
+            right: -2px;
+            color: #fff;
+
+            font-weight: 500;
+
+            .item-discount_img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .item-discount_info {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            font-size: 1.4rem;
+            font-weight: 500;
+
+            // .item-discount_content {
+
+            // }
+
+            .item-discount_number {
+                display: block;
+            }
+        }
+
+        .products-slide_item-img-link {
+            width: 100%;
+        }
+
+        .products-slide_item-img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .products-slide_item-info {
+            width: 100%;
+            padding: 5px 10px 0 10px;
+        }
+
+        .item-info_name,
+        .item-info_price-sale,
+        .item-info_original-price {
+            display: block;
+        }
+
+        .wrapper-item-info_name {
+            height: 4rem;
+            overflow: hidden;
+        }
+
+        .item-info_name-link {
+            .item-info_name {
+                line-height: 2rem;
+                font-size: 1.4rem;
+            }
+        }
+
+        .item-info_price-sale {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgb(255, 52, 37);
+            margin-top: 5px;
+        }
+
+        .item-info_original-price {
+            font-size: 1.4rem;
+            text-decoration: line-through;
+            color: #878c8f;
+            padding-bottom: 10px;
+        }
+
+        .item-info_quantity-sold {
+            width: 100%;
+
+            background-image: url('../../assets/images/IMGLogo/deal-line.webp');
+            background-size: 100%, 100%, cover;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quantity-sold_icon {
+            font-size: 15px;
+            color: var(--textColorPimary);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5px;
+        }
+
+        .quantity-sold_count {
+            font-size: 10px;
+            line-height: 2.1rem;
+        }
+    }
+}

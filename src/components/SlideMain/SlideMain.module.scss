@@ -1,0 +1,67 @@
+@use '../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper:hover {
+    .wrapper-right,
+    .wrapper-left {
+        opacity: 1;
+    }
+}
+
+.wrapper-right,
+.wrapper-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(var(--width-slide) / 25);
+    height: calc(var(--width-slide) / 25);
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper-left {
+    left: 3%;
+    .wrapper-left_icon {
+    }
+}
+.wrapper-right {
+    right: 3%;
+    .wrapper-right_icon {
+    }
+}
+
+.wrapper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.wrapper-slide {
+    // width: var(--width-slide);
+    width: calc(var(--width-slide) * 8);
+}
+
+.wrapper-slide_item {
+    width: var(--width-slide);
+}
+
+.wrapper-slide_item-link {
+    width: 100%;
+}
+
+.wrapper-slide_item-image {
+    width: 100%;
+    object-fit: cover;
+}

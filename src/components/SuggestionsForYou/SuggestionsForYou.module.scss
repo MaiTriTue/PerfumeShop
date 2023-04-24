@@ -1,0 +1,61 @@
+@use '../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper-top-products {
+    width: 100%;
+}
+
+.top-products_title {
+}
+
+.wrapper-top-products_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px 30px 0;
+}
+
+.top-products_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-products_line {
+    width: 40px;
+    border-bottom: 1px solid rgba(31, 32, 34, 0.5);
+}
+
+.top-products_name {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #ff0000;
+    padding: 0 10px;
+}
+
+.wrapper-suggestions_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.Suggestions_btn {
+    border: 1px solid #1f2022;
+    border-radius: 5px;
+    padding: 6px 12px;
+}
+
+.suggestions_btn-link {
+    display: block;
+}
+
+.suggestions_name {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ff0000;
+}

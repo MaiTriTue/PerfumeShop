@@ -1,0 +1,134 @@
+@use '../../../GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 1px solid var(--text-color3);
+    background-color: var(--BC-Header01);
+
+    @include s.laptop {
+    }
+    @include s.tablet {
+        // width: var(--default-layout-width-mobile);
+    }
+    @include s.mobile {
+        width: var(--default-layout-width-mobile);
+    }
+}
+
+.wrapper-left_search-input,
+.wrapper-right_function,
+.wrapper-left,
+.wrapper-all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-all {
+    padding: 0 25px;
+}
+
+.wrapper-left {
+    width: 50%;
+}
+
+.wrapper-left_logo {
+    width: 32.5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.wrapper-left_logo-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper-left_search {
+    width: 68.5%;
+    padding-top: 30px;
+    padding-left: 25px;
+
+    .wrapper-left_search-input {
+        width: 100%;
+        line-height: 35px;
+        border-radius: 99px;
+        background: #f1f1f1;
+        border: 1px solid #ebebeb;
+        padding: 0 0 0 10px;
+        margin-bottom: 2px;
+        overflow: hidden;
+
+        input {
+            font-size: 1.4rem;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        .search-input_icon {
+            cursor: pointer;
+            padding: 0 25px;
+            background-color: var(--textColorPimary);
+        }
+    }
+
+    .wrapper-left_search-link {
+        padding-bottom: 2px;
+        padding-left: 5px;
+        span {
+            padding-right: 10px;
+        }
+        a {
+            font-size: 1.3rem;
+            color: var(--textColorPimary);
+        }
+    }
+}
+
+.wrapper-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--textColorPimary);
+    // padding-right: 15px;
+    padding-top: 20px;
+
+    .wrapper-right_function:first-child {
+        width: 25%;
+    }
+    .wrapper-right_function:last-child {
+        // padding-right: 10px;
+        margin-left: 10px;
+    }
+
+    .wrapper-right_function {
+        width: 15%;
+        cursor: pointer;
+    }
+    .wrapper-right_icon {
+        font-size: 2.5rem;
+        padding-right: 8px;
+    }
+    .wrapper-right_name {
+        // padding: 5px 0;
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.2rem;
+        }
+        span {
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+    }
+
+    .count-product {
+    }
+}

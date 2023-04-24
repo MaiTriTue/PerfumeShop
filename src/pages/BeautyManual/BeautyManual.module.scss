@@ -1,0 +1,33 @@
+@use '../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    margin-top: 15.4vh;
+    min-height: 400px;
+    background-color: rgb(244 244 244);
+    @include s.laptop {
+    }
+
+    @include s.tablet {
+        margin-top: 7vh;
+    }
+
+    @include s.mobile {
+        margin-top: 7vh;
+    }
+}
+
+.wrapper-hot-brand {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+
+    h1,
+    p {
+        margin-bottom: 20px;
+    }
+}

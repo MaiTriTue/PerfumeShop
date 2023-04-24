@@ -1,0 +1,99 @@
+@use '../../components/GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    margin-top: 15.4vh;
+    min-height: 400px;
+    background-color: rgb(244 244 244);
+    @include s.laptop {
+    }
+
+    @include s.tablet {
+        margin-top: 8vh;
+    }
+
+    @include s.mobile {
+        margin-top: 7vh;
+    }
+}
+
+.wrapper-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-navbar {
+    width: 100%;
+}
+
+.wrapper-area {
+    width: 100%;
+    padding: 0 25px;
+    margin: 5px 0;
+}
+
+.area-one_category {
+    width: 18%;
+    height: calc(var(--width-slide) / 2);
+
+    margin-right: 5px;
+}
+
+.area-one_slide {
+    width: var(--width-slide);
+    height: calc(var(--width-slide) / 2);
+
+    margin-left: 15px;
+}
+
+.wrapper-area_best-sale {
+    width: 98.5vw;
+    padding: 0 25px;
+    margin: 5px 0;
+}
+
+.area-one_notification {
+    width: 30%;
+    height: calc(var(--width-slide) / 2);
+
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+
+    .area-one_notification-detail:first-child {
+        margin-bottom: 5px;
+    }
+    .area-one_notification-detail {
+        width: 100%;
+        height: 48%;
+        overflow: hidden;
+        // border: 1px solid red;
+
+        .notification-detail_link {
+            width: 100%;
+        }
+
+        .notification-detail_img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.wrapper-banner_sale-day-link {
+    width: 100%;
+}
+.wrapper-banner_sale-day-link1 {
+    width: 100%;
+}
+
+.wrapper-banner_sale-day {
+    width: 100%;
+    object-fit: cover;
+}
+.wrapper-banner_sale-woman {
+    width: 100%;
+    object-fit: cover;
+}

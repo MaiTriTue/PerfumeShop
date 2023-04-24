@@ -1,0 +1,135 @@
+@use '../../../GlobalStyles/GlobalStyles.scss' as s;
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    color: #0e0303;
+    line-height: 1.625;
+    background-color: #fff;
+
+    @include s.laptop {
+    }
+    @include s.tablet {
+    }
+    @include s.mobile {
+    }
+}
+
+.gallery-display-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include s.laptop {
+    }
+    @include s.tablet {
+    }
+    @include s.mobile {
+        display: block;
+        flex-direction: column;
+    }
+}
+
+.footer_contacts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer_contacts-body:first-child {
+    width: 30%;
+}
+
+.footer_contacts-body:last-child {
+    width: 20%;
+}
+
+.footer_contacts-body {
+    width: 25%;
+    padding-bottom: 30px;
+    padding-right: 20px;
+
+    .list-shop {
+        width: 100%;
+        max-height: 40vh;
+
+        overflow-y: scroll;
+    }
+
+    p {
+        font-size: 1.4rem;
+        color: #c4011a;
+        line-height: 1.4rem;
+        margin-bottom: 14px;
+        span {
+            display: block;
+        }
+    }
+
+    span,
+    a {
+        font-size: 1.2rem;
+        color: #333333;
+        line-height: 1.2rem;
+        margin-bottom: 14px;
+    }
+    span {
+        display: block;
+    }
+}
+
+.contacts-body_title {
+    font-size: 1.3rem;
+    margin-bottom: 17px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.footer_about {
+    width: 100%;
+}
+
+.footer_about-info {
+    p {
+        font-size: 1.2rem;
+        color: #333333;
+        line-height: 1.2rem;
+        margin-bottom: 14px;
+    }
+    .contacts-body_copyring {
+        width: 100%;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    .contacts-body_copyring-info {
+        font-size: 1.3rem;
+        color: #333333;
+        font-weight: 700;
+    }
+
+    .contacts-body_dkkd {
+        font-size: 1.2rem;
+        color: #333333;
+        line-height: 1.2rem;
+        margin-bottom: 14px;
+    }
+}
+
+.footer_about-logo-check {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 10%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
